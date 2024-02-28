@@ -1,0 +1,198 @@
+@import "partials/mixins";
+@media screen and (max-width: 1425px){
+    #main-text{
+        @include position_flex(space-between,center,column);
+        h2{
+            span{
+                display: none;
+                &:last-child{
+                    display: block;
+                }
+            }
+        }
+    }
+    #about{
+        #about-wrap{
+            #about-img{
+                width: 30%;
+            }
+            #about-text{
+                width: 50%;
+                #about-info{
+                    text-align: center;
+                    .row{
+                        @include position_flex(space-between,center,column);
+                    }
+                }
+            }    
+        }
+    }
+}
+@media screen and (max-width: 1230px){
+    #main-wrap{
+        #main-text{
+            h1{
+                @include position_flex(center,center,column);
+                span{
+                    padding: 0px;
+                }
+            }
+        }
+    }
+    #about{
+        #about-wrap{
+            #about-img{
+                width: 35%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1020px) {
+    #about{
+        #about-wrap{
+            @include position_flex(center,center,column);
+            .heading{
+                display: inline-block;
+            }
+            #about-img{
+                width: 40%;
+            }
+            #about-text{
+                width: 65%;
+                .heading{
+                    display: none;
+                }
+            }
+        }
+        
+    }
+}
+@media screen and (max-width: 768px){
+    #navigation{
+        @include position_flex(space-between,center,column);
+    }
+    #main-wrap{
+        padding: 200px 0px;
+        @include position_flex(center,center,column-reverse);
+        #main-text{
+            @include position_flex(space-around, center, column);
+            h1{
+                display: inline;
+            }
+        }
+        #main-img{
+            width: 50%;
+        }
+    }
+}
+@media screen and (max-width: 650px){
+    #navigation{
+        nav{
+            #nav-wrap{
+                ul{
+                    gap:25px;
+                }
+            }
+        }
+    }
+    #about{
+        #about-wrap{
+            #about-text{
+                width: 85%;
+                hr{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    #navigation{
+        #logo{
+            a{
+                img{
+                    width: 80px;
+                }
+            }
+        }
+        nav{
+            #nav-wrap{
+                ul{
+                    gap: 20px;
+                    li{
+                        a{
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #main-wrap{
+        padding: 220px 0px;
+        #main-text{
+            font-size: 80%;
+        }
+        
+    }
+    #about{
+        #about-wrap{
+            .heading{
+                h3{
+                    font-size: 2rem;
+                }
+            }
+            #about-text{
+                width: 100%;
+                p{
+                    font-size: 1rem;
+                }
+                #about-info{
+                    .row{
+                        h3{
+                            font-size: 1.5rem;
+                        }
+                        p{
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .button{
+        a{
+            font-size: 1.1rem;
+            padding: 10px 20px;
+        }
+    }
+}
+@media screen and (max-width: 383px){
+    #navigation{
+        nav{
+            #nav-wrap{
+                ul{
+                    @include position_flex(space-between,center,column);
+                    gap: 5px;
+                }
+            }
+        }
+    }
+    #main-wrap{
+        #main-text{
+            h1{
+                @include position_flex(center,center,column);
+            }
+        }
+        #main-img{
+            display: none;
+        }
+    }
+    #about{
+        #about-wrap{
+            #about-text{
+                width: 110%;
+            }
+        }
+    }
+}

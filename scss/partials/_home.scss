@@ -1,0 +1,46 @@
+@import "mixins";
+#main-wrap{
+    @include position_flex();
+    padding: 200px 0px;
+    #main-text{
+        @include position_flex(space-around, center, column);
+        h1,h2,span{
+            font-family: $font_naslov;
+            padding: 15px 0px;
+            text-align: center;
+        }
+        h1{
+            font-size: 3em;
+        }
+        h2{
+            font-weight: 200;
+        }
+        hr{
+            @include spacer();
+        }
+        ul{
+            @include position_flex(space-around, center, row);
+            gap: 20px;
+            font-size: 2em;
+            li{
+                a{
+                    i{
+                        &:hover{
+                            transition: color 0.4s;
+                            color: $boja_hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #main-img{
+        @include position_flex(center);
+        img{
+            width: 70%;
+        }
+    }
+}
+main{
+    background-color: $pozadina;
+}
