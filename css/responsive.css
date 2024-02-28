@@ -31,6 +31,9 @@
   #services #service-wrap .service {
     min-height: 320px;
   }
+  #projects * {
+    display: none;
+  }
 }
 @media screen and (max-width: 1230px) {
   #main-wrap #main-text h1 {
