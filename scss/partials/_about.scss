@@ -1,7 +1,7 @@
 @import "mixins";
 #about{
     @include position_flex();
-    padding: 50px 0px;
+    padding: 80px 0px;
     background-color: $pozadina_header;
     #about-wrap{
         @include position_flex(space-around);
@@ -15,7 +15,7 @@
         }
         #about-img{
             width: 25%;
-            box-shadow: 10px 10px 40px $pozadina;
+            box-shadow: 0px 0px 40px $pozadina;
             border-radius: 30px;
             background: linear-gradient(315deg, rgba(1,46,58,1) 10%, rgba(2,65,82,1) 50%, rgba(1,46,58,1) 90%);
             img{
@@ -30,7 +30,7 @@
                 @include spacer(70%,3px);
             }
             p{
-                font-size: 1.3rem;
+                font-size: 1.1rem;
                 font-weight: 200;
             }
             .heading{
@@ -46,12 +46,12 @@
                     @include position_flex(space-between,center,row);
                     flex-wrap: wrap;
                     h3{
-                        font-size: 1.8rem;
+                        font-size: 1.6rem;
                         color: $boja_hover;
                     }
                     p{
                         font-weight: bold;
-                        font-size: 1.3rem;
+                        font-size: 1.2rem;
                     }
                 }
             }

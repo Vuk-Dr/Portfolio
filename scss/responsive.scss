@@ -27,6 +27,13 @@
             }    
         }
     }
+    #services{
+        #service-wrap{
+            .service{
+                min-height: 320px;
+            }
+        }   
+    }
 }
 @media screen and (max-width: 1230px){
     #main-wrap{
@@ -46,6 +53,18 @@
             }
         }
     }
+    #services{
+        #service-wrap{
+            .service{
+                h4{
+                    font-size: 1.4rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }   
+    }
 }
 @media screen and (max-width: 1020px) {
     #about{
@@ -56,6 +75,8 @@
             }
             #about-img{
                 width: 40%;
+                margin-bottom: 20px;
+
             }
             #about-text{
                 width: 65%;
@@ -65,6 +86,16 @@
             }
         }
         
+    }
+    #services{
+        #service-wrap{
+            flex-direction: column;
+            gap: 30px;
+            .service{
+                width: 50%;
+                min-height: 0px;
+            }
+        }   
     }
 }
 @media screen and (max-width: 768px){
@@ -81,7 +112,7 @@
             }
         }
         #main-img{
-            width: 50%;
+            width: 60%;
         }
     }
 }
@@ -103,7 +134,17 @@
                     width: 50%;
                 }
             }
+            #about-img{
+                width: 50%;
+            }
         }
+    }
+    #services{
+        #service-wrap{
+            .service{
+                width: 60%;
+            }
+        }   
     }
 }
 @media screen and (max-width: 480px){
@@ -129,9 +170,12 @@
         }
     }
     #main-wrap{
-        padding: 220px 0px;
+        padding: 120px 0px;
         #main-text{
             font-size: 80%;
+        }
+        #main-img{
+            width: 80%;
         }
         
     }
@@ -141,6 +185,9 @@
                 h3{
                     font-size: 2rem;
                 }
+            }
+            #about-img{
+                width: 60%;
             }
             #about-text{
                 width: 100%;
@@ -165,6 +212,13 @@
             font-size: 1.1rem;
             padding: 10px 20px;
         }
+    }
+    #services{
+        #service-wrap{
+            .service{
+                width: 70%;
+            }
+        }   
     }
 }
 @media screen and (max-width: 383px){
@@ -194,5 +248,12 @@
                 width: 110%;
             }
         }
+    }
+    #services{
+        #service-wrap{
+            .service{
+                width: 80%;
+            }
+        }   
     }
 }

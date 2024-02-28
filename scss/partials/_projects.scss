@@ -1,0 +1,32 @@
+@import "mixins";
+#projects{
+    padding: 60px 0px;
+    height: 80vh;
+    background-color: $pozadina_header;
+    .heading{
+        @include position_flex(center,center,column);
+        hr{
+            margin: 20px 0px;
+            @include spacer(10%);
+        }
+    }
+    #projects-wrap{
+        width: 100%;
+        @include position_flex(space-around,center,column);
+        gap: 50px;
+        .project{
+            @include position_flex(space-around,center,row);
+            gap: 70px;
+            .project-text{
+                width: 300px;
+                height: 200px;
+                background-color: aqua;
+            }
+            .project-img{
+                width: 600px;
+                height: 300px;
+                background-color: green;
+            }
+        }
+    }
+}

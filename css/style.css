@@ -32,13 +32,24 @@ header {
   background-color: #012e3a;
 }
 
+#home {
+  background-image: url("../../img/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+#home #home-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 #main-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   margin: 0px auto;
-  padding: 200px 0px;
+  padding: 180px 0px;
 }
 #main-wrap #main-text {
   display: flex;
@@ -89,17 +100,13 @@ header {
   width: 70%;
 }
 
-main {
-  background-color: #024152;
-}
-
 #about {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   margin: 0px auto;
-  padding: 50px 0px;
+  padding: 80px 0px;
   background-color: #012e3a;
 }
 #about #about-wrap {
@@ -127,7 +134,7 @@ main {
 }
 #about #about-wrap #about-img {
   width: 25%;
-  box-shadow: 10px 10px 40px #024152;
+  box-shadow: 0px 0px 40px #024152;
   border-radius: 30px;
   background: linear-gradient(315deg, rgb(1, 46, 58) 10%, rgb(2, 65, 82) 50%, rgb(1, 46, 58) 90%);
 }
@@ -147,7 +154,7 @@ main {
   border-color: #28E0C0;
 }
 #about #about-wrap #about-text p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 200;
 }
 #about #about-wrap #about-text .heading {
@@ -177,16 +184,16 @@ main {
   flex-wrap: wrap;
 }
 #about #about-wrap #about-text #about-info .row h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #28E0C0;
 }
 #about #about-wrap #about-text #about-info .row p {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 #services {
-  height: 80vh;
+  background-color: #024152;
   padding: 50px 0px;
 }
 #services .heading {
@@ -203,6 +210,90 @@ main {
   background-color: #28E0C0;
   border-radius: 10px 3px 10px 3px;
   border-color: #28E0C0;
+}
+#services #service-wrap {
+  padding: 40px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px auto;
+}
+#services #service-wrap .service {
+  width: 26%;
+  min-height: 280px;
+  background-color: #012e3a;
+  text-align: center;
+  padding: 30px 20px;
+  border: 2px solid #28E0C0;
+  border-radius: 20px;
+}
+#services #service-wrap .service i {
+  font-size: 5rem;
+}
+#services #service-wrap .service h4 {
+  padding: 10px;
+  font-size: 1.6rem;
+}
+#services #service-wrap .service hr {
+  width: 40%;
+  height: 5px;
+  background-color: #28E0C0;
+  border-radius: 10px 3px 10px 3px;
+  border-color: #28E0C0;
+  margin: 10px auto;
+}
+#services #service-wrap .service p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+#projects {
+  padding: 60px 0px;
+  height: 80vh;
+  background-color: #012e3a;
+}
+#projects .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px auto;
+}
+#projects .heading hr {
+  margin: 20px 0px;
+  width: 10%;
+  height: 5px;
+  background-color: #28E0C0;
+  border-radius: 10px 3px 10px 3px;
+  border-color: #28E0C0;
+}
+#projects #projects-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px auto;
+  gap: 50px;
+}
+#projects #projects-wrap .project {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px auto;
+  gap: 70px;
+}
+#projects #projects-wrap .project .project-text {
+  width: 300px;
+  height: 200px;
+  background-color: aqua;
+}
+#projects #projects-wrap .project .project-img {
+  width: 600px;
+  height: 300px;
+  background-color: green;
 }
 
 * {
@@ -222,14 +313,14 @@ main {
 
 .heading h3 {
   font-family: "Raleway", sans-serif;
-  font-size: 3rem;
+  font-size: 2.7rem;
 }
 
 .button {
   padding: 20px 0px;
 }
 .button a {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding: 15px 30px;
   border: 3px solid #28E0C0;
   border-radius: 10px;
