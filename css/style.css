@@ -22,9 +22,9 @@
 }
 #navigation nav #nav-wrap ul li a {
   font-size: 1.4rem;
+  transition: color 0.4s;
 }
 #navigation nav #nav-wrap ul li a:hover {
-  transition: color 0.5s;
   color: #28E0C0;
 }
 
@@ -75,6 +75,7 @@ header {
   background-color: #28E0C0;
   border-radius: 10px 3px 10px 3px;
   border-color: #28E0C0;
+  margin: 10px auto;
 }
 #main-wrap #main-text ul {
   display: flex;
@@ -85,8 +86,10 @@ header {
   gap: 20px;
   font-size: 2em;
 }
+#main-wrap #main-text ul li a i {
+  transition: color 0.5s;
+}
 #main-wrap #main-text ul li a i:hover {
-  transition: color 0.4s;
   color: #28E0C0;
 }
 #main-wrap #main-img {
@@ -130,6 +133,7 @@ header {
   background-color: #28E0C0;
   border-radius: 10px 3px 10px 3px;
   border-color: #28E0C0;
+  margin: 10px auto;
   margin: 15px auto;
 }
 #about #about-wrap #about-img {
@@ -152,6 +156,7 @@ header {
   background-color: #28E0C0;
   border-radius: 10px 3px 10px 3px;
   border-color: #28E0C0;
+  margin: 10px auto;
 }
 #about #about-wrap #about-text p {
   font-size: 1.1rem;
@@ -170,6 +175,7 @@ header {
   background-color: #28E0C0;
   border-radius: 10px 3px 10px 3px;
   border-color: #28E0C0;
+  margin: 10px auto;
 }
 #about #about-wrap #about-text #about-info {
   text-align: right;
@@ -210,6 +216,7 @@ header {
   background-color: #28E0C0;
   border-radius: 10px 3px 10px 3px;
   border-color: #28E0C0;
+  margin: 10px auto;
 }
 #services #service-wrap {
   padding: 40px 0px;
@@ -242,6 +249,7 @@ header {
   border-radius: 10px 3px 10px 3px;
   border-color: #28E0C0;
   margin: 10px auto;
+  margin: 10px auto;
 }
 #services #service-wrap .service p {
   font-size: 1.1rem;
@@ -250,7 +258,6 @@ header {
 
 #projects {
   padding: 60px 0px;
-  height: 80vh;
   background-color: #012e3a;
 }
 #projects .heading {
@@ -267,9 +274,11 @@ header {
   background-color: #28E0C0;
   border-radius: 10px 3px 10px 3px;
   border-color: #28E0C0;
+  margin: 10px auto;
 }
 #projects #projects-wrap {
   width: 100%;
+  padding-top: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -279,21 +288,173 @@ header {
 }
 #projects #projects-wrap .project {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px auto;
+  gap: 40px;
+}
+#projects #projects-wrap .project:nth-child(even) {
+  flex-direction: row-reverse;
+}
+#projects #projects-wrap .project .project-text {
+  padding: 20px;
+  font-size: 1.3rem;
+  text-align: center;
+}
+#projects #projects-wrap .project .project-text hr {
+  width: 20%;
+  height: 5px;
+  background-color: #28E0C0;
+  border-radius: 10px 3px 10px 3px;
+  border-color: #28E0C0;
+  margin: 10px auto;
+  margin: 10px auto;
+  font-size: 1.6rem;
+  min-width: 50px;
+}
+#projects #projects-wrap .project .project-img {
+  width: 60%;
+  border-radius: 20px;
+  box-shadow: 10px 10px #28E0C0;
+}
+#projects #projects-wrap .project .project-img img {
+  border: 1px solid #28E0C0;
+  width: 100%;
+  border-radius: 20px;
+  transition: transform 0.5s;
+}
+#projects #projects-wrap .project .project-img img:hover {
+  transform: translate(10px, 12px);
+}
+
+#contact {
+  padding: 60px 0px;
+  background-color: #024152;
+}
+#contact #contact-wrap {
+  display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
   margin: 0px auto;
-  gap: 70px;
+  margin: 0px;
 }
-#projects #projects-wrap .project .project-text {
-  width: 300px;
-  height: 200px;
-  background-color: aqua;
+#contact #contact-wrap .heading hr {
+  width: 40%;
+  height: 5px;
+  background-color: #28E0C0;
+  border-radius: 10px 3px 10px 3px;
+  border-color: #28E0C0;
+  margin: 10px auto;
 }
-#projects #projects-wrap .project .project-img {
-  width: 600px;
-  height: 300px;
-  background-color: green;
+#contact #contact-wrap #contact-info {
+  width: 25%;
+  white-space: nowrap;
+  text-align: left;
+}
+#contact #contact-wrap #contact-info p {
+  margin: 20px 0px;
+  font-size: 1.4rem;
+}
+#contact #contact-wrap #contact-info i {
+  font-size: 2rem;
+  color: #28E0C0;
+}
+#contact #contact-wrap #contact-info br {
+  display: none;
+}
+#contact #contact-wrap #form {
+  width: 50%;
+}
+#contact #contact-wrap #form form {
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px auto;
+  flex-wrap: wrap;
+}
+#contact #contact-wrap #form form input, #contact #contact-wrap #form form textarea {
+  width: 100%;
+  height: 50px;
+  margin: 10px auto;
+  border-radius: 10px;
+  text-indent: 10px;
+  font-size: 1.2rem;
+  background-color: #012e3a;
+  border: 2px solid #28E0C0;
+}
+#contact #contact-wrap #form form #send {
+  color: white;
+  transition: 0.5s;
+  width: 40%;
+}
+#contact #contact-wrap #form form #lname {
+  float: right;
+}
+#contact #contact-wrap #form form textarea {
+  margin-top: 10px;
+  resize: none;
+  height: 250px;
+  padding-top: 10px;
+}
+#contact #contact-wrap #form form #email {
+  color: white;
+}
+#contact #contact-wrap #form form input[type=text] {
+  width: 49%;
+}
+#contact #contact-wrap #form form #wrap-name {
+  width: inherit;
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px auto;
+}
+#contact #contact-wrap #form #send:hover {
+  background-color: #28E0C0;
+  color: white;
+}
+
+footer {
+  background-color: #012e3a;
+}
+footer .wrap-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px auto;
+  padding-top: 20px;
+}
+footer .wrap-center .fa-arrow-up {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+footer .wrap-center ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px auto;
+  gap: 20px;
+  font-size: 2rem;
+}
+footer .wrap-center ul li a i {
+  transition: color 0.5s;
+}
+footer .wrap-center ul li a i:hover {
+  color: #28E0C0;
+}
+footer .wrap-center p {
+  padding: 10px 0px;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 * {
@@ -314,6 +475,15 @@ header {
 .heading h3 {
   font-family: "Raleway", sans-serif;
   font-size: 2.7rem;
+  text-align: center;
+}
+.heading hr {
+  width: 10%;
+  height: 5px;
+  background-color: #28E0C0;
+  border-radius: 10px 3px 10px 3px;
+  border-color: #28E0C0;
+  margin: 10px auto;
 }
 
 .button {
@@ -324,8 +494,8 @@ header {
   padding: 15px 30px;
   border: 3px solid #28E0C0;
   border-radius: 10px;
+  transition: background-color 0.4s;
 }
 .button a:hover {
-  transition: background-color 0.4s;
   background-color: #28E0C0;
 }

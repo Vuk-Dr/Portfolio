@@ -19,8 +19,8 @@
                     
                     a{
                         font-size: 1.4rem;
+                        transition: color 0.4s;
                         &:hover{
-                            transition: color 0.5s;
                             color:$boja_hover;
                         }
                     }

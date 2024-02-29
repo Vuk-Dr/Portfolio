@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8"/>
-        <meta name="author" content="Vuk Drobnjakovic">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="Vuk Drobnjaković, back-end, Web Developer, SEO, Software Developer, Web Development, Database Administration ">
+        <meta charset="UTF-8" />
+        <meta name="author" content="Vuk Drobnjakovic" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="Vuk Drobnjaković, back-end, Web Developer, SEO, Software Developer, Web Development, Database Administration " />
         <meta name="description" content="Explore the work of a passionate and skilled developer. I specialize in creating innovative web applications and responsive websites. Check out my portfolio to see examples of my projects and expertise in front-end and back-end development" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="stylesheet" type="text/css" href="css/responsive.css" />
@@ -25,10 +25,10 @@
                     <nav>
                         <div id="nav-wrap">
                             <ul>
+                                <li><a href="index.html">Home</a></li>
                                 <li><a href="#about">About</a></li>
                                 <li><a href="#services">Services</a></li>
-                                <li><a href="#About">Skills</a></li>
-                                <li><a href="#About">Projects</a></li>
+                                <li><a href="#projects">Projects</a></li>
                                 <li><a href="#contact">Contact</a></li>
                             </ul>
                         </div>
@@ -108,16 +108,62 @@
                     <div class="heading"><h3>My Projects</h3><hr /></div>
                     <div id="projects-wrap">
                         <div class="project">
-                            <div class="project-text"></div>
-                            <div class="project-img"></div>
+                            <div class="project-text">
+                                <h4>Karting Zone</h4><hr/>
+                                <p>HTML,CSS</p>
+                            </div>
+                            <div class="project-img">
+                                <img src="img/projekat1.png" alt="projekat1" />
+                            </div>
                         </div>
                         <div class="project">
-                            <div class="project-img"></div>
-                            <div class="project-text"></div>
+                            <div class="project-text">
+                                <h4>My Portfolio</h4><hr/>
+                                <p>HTML, CSS, SASS, Responsive</p>
+                            </div>
+                            <div class="project-img">
+                                <img src="img/projekat2.png" alt="projekat2" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div id="contact">
+                <div class="wrap-center">
+                    
+                    <div id="contact-wrap">
+                        <div id="contact-info">
+                            <div class="heading"><h3>Contact me</h3><hr /></div>
+                            <p><i class="fa-solid fa-phone"></i> +381 64 6457618</p>
+                            <p><i class="fa-solid fa-envelope"></i> <br />drobnjakovic.vuk&#64;gmail.com</p>
+                            <p><i class="fa-solid fa-location-dot"></i> &nbsp;Ljubice Luković 1, Beograd</p>
+                        </div>
+                        <div id="form">
+                            <form id="formContact" action="obrada.php" method="post">
+                                <div id="wrap-name">
+                                    <input type="text" id="name" name="name" placeholder="First name" required="required" />
+                                    <input type="text" id="lname" name="lname" placeholder="Last name" required="required" />
+                                </div>
+                                <input type="tel" id="phone" name="phone" placeholder="Phone number" required="required" />
+                                <input type="email" id="email" name="email" placeholder="Email Address" required="required" />
+                                <textarea placeholder="Enter your message..."></textarea>
+                                <input type="submit" id="send" name="send" value="Send" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="wrap-center">
+                    <a href="#navigation"><i class="fa-solid fa-arrow-up"></i></a>
+                    <ul>
+                        <li><a href="https://github.com/Vuk-Dr/Portfolio" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="sitemap.xml" target="_blank"><i class="fa-solid fa-sitemap"></i></a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1woVj0c5GQCUVQylXAWkz8uUKkpxJTsBs?usp=drive_link" target="_blank"><i class="fa-brands fa-google-drive"></i></a></li>
+                    </ul>
+                    <p>Vuk Drobnjaković &copy; 2024 </p>
+                </div>
+            </footer>
         </main>
     </body>
 </html>

@@ -35,8 +35,8 @@
             li{
                 a{
                     i{
+                        transition: color 0.5s;
                         &:hover{
-                            transition: color 0.4s;
                             color: $boja_hover;
                         }
                     }
